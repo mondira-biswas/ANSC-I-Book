@@ -6,9 +6,22 @@ int main()
 int row,column,y;
 row=1;
 printf("Multiplication table\n=");
-printf("\n");
-do 
+do
 {
     column=1;
-}
+    do
+    {
+        printf("%4d",row*column);
+        column++;
+
+    }while(column<=COLMAX);
+    printf("\n");
+    row++;
+
+    
+}while(row<=ROWMAX);
+return 0;
+
+
+
 }
