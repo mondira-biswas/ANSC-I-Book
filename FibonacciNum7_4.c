@@ -4,7 +4,7 @@ int main()
     int num1=0,num2=1,count=0,fibo,n;
     printf("Enter the value of n=\n");
     scanf("%d",&n);
-    while(count<n)
+    for(count=0;count<n;count++)
     {
         if(count<=1)
         {
@@ -16,7 +16,6 @@ int main()
             num2=fibo;
         }
         printf("%d\n",fibo);
-        count++;
     }
     return 0;
 }
